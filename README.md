@@ -19,7 +19,7 @@ f7c88d9c11aa05590aefd8e8e60db875b58ffd2d4b2dd429
 │       │   ├── public/
 │       │   │   ├── createapikey.js
 │       │   │   └── hellopublic.js
-│       └── public-paths.json
+│       ├── public-paths.json
 │       └── authorization.js
 ├── data/
 │   ├── admin-keys.json
