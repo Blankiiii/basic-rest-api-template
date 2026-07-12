@@ -2,7 +2,7 @@
 
 A simple modular Express REST API template with auto-loaded endpoint modules, api-key generation scripts, and rate limiting with timeouts.
 
-## example api key
+## Example Api Key
 this apikey is found under data/api-keys.json "demo" but hashed, meaning if you want to actually use this remove the demo entry
 ```
 f7c88d9c11aa05590aefd8e8e60db875b58ffd2d4b2dd429
