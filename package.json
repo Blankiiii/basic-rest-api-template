@@ -1,0 +1,15 @@
+{
+  "name": "basic-rest-api",
+  "version": "1.0.0",
+  "description": "Simple Express REST API with auto-loaded endpoint modules",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "create:key": "node scripts/create-api-key.js",
+    "testratelimit": "node scripts/test-rate-limit.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

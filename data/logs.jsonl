@@ -1,0 +1,4 @@
+{"type":"incoming_request","timestamp":"2026-07-12T22:08:40.357Z","payload":{"ip":"::1","method":"GET","path":"/api/v1/createkey"}}
+{"type":"incoming_request","timestamp":"2026-07-12T22:09:17.467Z","payload":{"ip":"::1","method":"GET","path":"/health"}}
+{"type":"incoming_request","timestamp":"2026-07-12T22:09:54.756Z","payload":{"ip":"::1","method":"GET","path":"/api/v1/hellopublic"}}
+{"type":"incoming_request","timestamp":"2026-07-12T22:10:04.394Z","payload":{"ip":"::1","method":"GET","path":"/api/v1/hello"}}
