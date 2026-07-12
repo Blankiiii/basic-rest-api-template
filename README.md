@@ -49,6 +49,7 @@ f7c88d9c11aa05590aefd8e8e60db875b58ffd2d4b2dd429
 - server.js - main entry point that applies global rate limits, logs every incoming request, and auto-loads endpoint modules
 - scripts - script files to manually create API keys or test the server limits
 - utils/logger.js - logging module to write events down to data/logs.jsonl
+- api/v1/modules - in there you find the auth and public folder any endpoint created there is public (not needing an api key) and auth which does require one
 
 ## Usage
 
