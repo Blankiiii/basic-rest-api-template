@@ -58,7 +58,7 @@ function globalRateLimiter(req, res, next) {
 
     return res.status(429).json({
       error: 'Too Many Requests',
-      message: `Rate limit of ${rateLimit.max} requests per second exceeded. You are timed out for 1 minute.`,
+      message: `Rate limit of ${rateLimit.max} requests per 10 seconds exceeded. You are timed out for 1 minute.`,
       status: 429
     });
   }
