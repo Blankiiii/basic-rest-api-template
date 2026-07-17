@@ -12,9 +12,9 @@ const { logEvent } = require('./utils/logger.js');
 
 // --- Global Rate Limiter State ---
 const rateLimit = {
-  windowMs: 10000,
-  max: 20,
-  timeoutMs: 60000, // 1 minute timeout
+  windowMs: 10  * 1000,      // change the 10 to your request time time (currently 20 requests per 10 seconds)
+  max: 20,                    // change the 2 to your max requests per ... (currently 20 requests per 10 seconds)
+  timeoutMs: 6  * 10 * 1000,  // change the 6 to your timeout time (currently 60s = 1m timeout)
   requests: new Map()
 };
 
@@ -58,7 +58,7 @@ function globalRateLimiter(req, res, next) {
 
     return res.status(429).json({
       error: 'Too Many Requests',
-      message: `Rate limit of ${rateLimit.max} requests per 10 seconds exceeded. You are timed out for 1 minute.`,
+      message: `Rate limit of ${rateLimit.max} requests per ${rateLimit.windowMs / 1000} seconds exceeded. You are timed out for 1 minute.`,
       status: 429
     });
   }

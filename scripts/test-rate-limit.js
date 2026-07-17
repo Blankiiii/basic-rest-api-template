@@ -6,14 +6,18 @@ const interval = setInterval(async () => {
     count++;
     const currentCount = count;
     
-    if (count >= 100) {
+    if (count > 21) {
         clearInterval(interval);
+        return;
     }
 
     try {
         const response = await fetch(url);
-        console.log(`request ${currentCount}/100: Status ${response.status}`);
+
+        const data = await response.json();
+        
+        console.log(`request ${currentCount}/21: Status ${response.status} | Data:`, data);
     } catch (error) {
-        console.error(`request ${currentCount}/100 failed:`, error.message);
+        console.error(`request ${currentCount}/21 failed:`, error.message);
     }
 }, 2);
