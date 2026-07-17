@@ -54,7 +54,7 @@ f7c88d9c11aa05590aefd8e8e60db875b58ffd2d4b2dd429
 ## Usage
 
 * To test the rate limiter, you can run `npm run testratelimit` while your server is up. 
-* If you send over 20 requests per second to any endpoint across the API, your IP will get a temporary 1-minute timeout block.
+* If you send over 20 requests per 10 seconds to any endpoint across the API, your IP will get a temporary 1-minute timeout block.
 * Every single request hitting the server automatically gets tracked and logged into the `data/logs.jsonl` file.
 
 ### Example Responses
@@ -63,7 +63,7 @@ Too many requests error:
 ```json
 {
   "error": "Too Many Requests",
-  "message": "Rate limit of 20 requests per second exceeded. You are timed out for 1 minute.",
+  "message": "Rate limit of 20 requests per 10 seconds exceeded. You are timed out for 1 minute.",
   "status": 429
 }
 ```
