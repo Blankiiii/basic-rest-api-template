@@ -12,7 +12,7 @@ const { logEvent } = require('./utils/logger.js');
 
 // --- Global Rate Limiter State ---
 const rateLimit = {
-  windowMs: 1000,
+  windowMs: 10000,
   max: 20,
   timeoutMs: 60000, // 1 minute timeout
   requests: new Map()
