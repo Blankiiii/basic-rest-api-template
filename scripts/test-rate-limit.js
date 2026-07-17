@@ -16,4 +16,4 @@ const interval = setInterval(async () => {
     } catch (error) {
         console.error(`request ${currentCount}/100 failed:`, error.message);
     }
-}, 2); // Alle 2 Millisekunden
+}, 2);
